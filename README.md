@@ -3,9 +3,15 @@
 >  Spring Boot를 기반으로 한 WebSocket 메시징 서비스
 
 
-#### reference
-- https://spring.io/guides/gs/messaging-stomp-websocket
-- https://github.com/spring-guides/gs-messaging-stomp-websocket
+### **참고 자료**
+
+<details>
+<summary>Click to expand</summary>
+
+- [Spring Messaging STOMP WebSocket Guide](https://spring.io/guides/gs/messaging-stomp-websocket)
+- [GitHub: gs-messaging-stomp-websocket](https://github.com/spring-guides/gs-messaging-stomp-websocket)
+
+</details>
 
 ---
 
@@ -15,6 +21,8 @@
 - Spring Web
 - WebSocket
 - Lombock
+
+---
 
 
 ## **WebSocket 연결**
