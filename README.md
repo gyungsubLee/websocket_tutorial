@@ -13,15 +13,12 @@
 
 </details>
 
----
 
 
 ## Dependency
 
 - Spring Web
 - WebSocket
-
----
 
 
 ## **WebSocket 연결**
@@ -50,7 +47,6 @@
  Sec-WebSocket-Accept: HSmrc0sMlYUkAGmm5OPpG2HaGWk=
  ```
 
----
 
 ## **메시지 처리**
 
@@ -61,7 +57,6 @@
 #### **요청 예시 (JSON)**
  ```json
  {
-   "sender": "유저1",
    "content": "안녕하세요!"
  }
  ```
@@ -71,13 +66,11 @@
  curl -X POST \
  -H "Content-Type: application/json" \
  -d '{
-   "sender": "유저1",
    "content": "안녕하세요!"
  }' \
  http://localhost:8080/app/sendMessage
  ```
 
----
 
 ### **메시지 응답**
 - **구독 엔드포인트**: `/topic/receiveMessage`
@@ -85,13 +78,10 @@
 #### **응답 예시 (JSON)**
  ```json
  {
-   "sender": "유저1",
    "message": "안녕하세요!",
-   "timestamp": "2025-01-04T14:40:00.456Z"
  }
  ```
 
----
 
 ## **WebSocket 클라이언트 예시**
 
@@ -151,20 +141,18 @@ $(function () {
 ```
 
 
----
 
-## **개발 환경 설정**
+## **실습**
 
 1. **Spring Boot 서버 시작하기** (Gradle 사용):
     ```bash
-    ./gradlew bootRun
+    ./gradlew [프로젝트명]
     ```
 
 2. **위 엔드포인트를 사용하여 WebSocket 연결**
 
 3. **Curl 또는 WebSocket 클라이언트를 사용해 메시지 테스트**
 
----
 
 ## **에러 처리**
 
