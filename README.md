@@ -50,8 +50,10 @@
 
 ## **메시지 처리**
 
+> STOMP 프로토콜 사용
+
 ### **메시지 요청**
-- **엔드포인트**: `/app/sendMessage` (STOMP 프로토콜 사용)
+- **발행 엔드포인트**: `/app/sendMessage`
 - **Content-Type**: `application/json`
 
 #### **요청 예시 (JSON)**
@@ -74,6 +76,7 @@
 
 ### **메시지 응답**
 - **구독 엔드포인트**: `/topic/receiveMessage`
+- **Content-Type**: `application/json`
 
 #### **응답 예시 (JSON)**
  ```json
