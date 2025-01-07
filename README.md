@@ -70,12 +70,12 @@
  -d '{
    "content": "안녕하세요!"
  }' \
- http://localhost:8080/app/sendMessage
+ http://localhost:8080/send/message
  ```
 
 
 ### **메시지 응답**
-- **구독 엔드포인트**: `/topic/receiveMessage`
+- **구독 엔드포인트**: `/receive/message`
 - **Content-Type**: `application/json`
 
 #### **응답 예시 (JSON)**
