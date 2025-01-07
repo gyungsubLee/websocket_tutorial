@@ -53,7 +53,7 @@
 > STOMP 프로토콜 사용
 
 ### **메시지 요청**
-- **발행 엔드포인트**: `/app/sendMessage`
+- **발행 엔드포인트**: `/send/message`
 - **Content-Type**: `application/json`
 
 #### **요청 예시 (JSON)**
