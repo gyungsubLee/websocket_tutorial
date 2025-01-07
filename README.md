@@ -149,7 +149,7 @@ $(function () {
 
 1. **Spring Boot 서버 시작하기** (Gradle 사용):
     ```bash
-    ./gradlew [프로젝트명]
+    ./gradlew bootRun
     ```
 
 2. **위 엔드포인트를 사용하여 WebSocket 연결**
